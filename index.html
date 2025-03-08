@@ -83,10 +83,19 @@
         }
 
         /* Mensaje animado */
+        .message-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
         .message {
             font-size: 22px;
-            color: white;
-            font-weight: bold;
+            color: white; /* Letra blanca */
+            font-weight: bold; /* Negrita */
             opacity: 0;
             transition: opacity 1s ease-in-out;
             margin-top: 20px;
@@ -127,7 +136,9 @@
     </div>
 
     <!-- Mensaje sorpresa -->
-    <p class="message" id="message"></p>
+    <div class="message-container">
+        <p class="message" id="message"></p>
+    </div>
 
     <script>
         function bloomFlower() {
@@ -155,7 +166,7 @@
         }
 
         function typeMessage() {
-            let messageText = "Feliz Dia da Mulher para a mulher mais bonita do universo, para a minha menina mais inteligente, mais forte e mais valiosa.";
+            let messageText = "Feliz Día de la Mujer, mi amor. Eres mi vida, mi futuro, mi todo. Admiro cada parte de ti, tu fortaleza, tu dulzura y el increíble ser humano que eres. No importa lo que pase, nunca me rendiré con nosotros, porque mi amor por ti es más fuerte que cualquier obstáculo. Siempre lucharé por ti, por nuestro amor y por el hermoso futuro que nos espera juntos. Te amo con todo mi corazón, hoy y siempre";
             let messageElement = document.getElementById("message");
             let index = 0;
             messageElement.textContent = "";
